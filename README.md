@@ -110,7 +110,7 @@ The output graph will look something like this:
     }
 </details>
 
-Note that some optional arguments of `mg.trace` were added:
+Note that there are two optional arguments in `mg.trace`:
 
 - `allow_conditional_flow`: Determines if conditional operations are allowed. If set to `"auto"`, it will check there is any conditional flow in the function and decide to use it. Currently, it only supports static conditional flow.
 - `store_forward_pass_output`: Determines if the forward pass output is stored in the graph. Use `dill` instead of `json` to save the graph if this option is enabled because `json` module can't serialize the numpy array.
